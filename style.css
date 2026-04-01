@@ -176,6 +176,16 @@ body {
 .name-reveal {
   margin-bottom: 20px;
 }
+#athlete-name {
+  font-family: 'Road Rage', Arial, sans-serif;
+  font-size: 130px;
+  font-weight: normal;
+  line-height: 1.1;
+  padding: 10px 30px 0 30px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
 .name-first {
   color: #ffffff;
   display: inline-block;
@@ -1360,9 +1370,9 @@ body {
   }
 
   #athlete-name {
-    font-size: 52px;
-    padding: 10px 10px 0 10px;
-    text-align: center;
+    font-size: 58px;
+    padding: 10px 50px 0 15px;
+    
   }
 
   .hero-content {
