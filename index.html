@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Ellis | PG | Class of 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231a7a4a'/><text x='50' y='68' font-size='55' font-family='Arial' font-weight='900' text-anchor='middle' fill='%23FFD700'>JE</text></svg>">
+  <meta property="og:title" content="Jordan Ellis | PG | Class of 2026" />
+  <meta property="og:description" content="Point Guard | Westside Academy | Chicago, IL" />
+  <meta property="og:image" content="images/hero-bg.png" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- PARTICLE BACKGROUND -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">JE</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#videos">Highlights</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#timeline">Journey</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#live">Live</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-label">CLASS OF 2026 | POINT GUARD</p>
+      <div class="name-reveal">
+        <h1 id="athlete-name">
+          <span class="name-first">JORDAN</span>
+          <span class="name-last"> ELLIS</span>
+        </h1>
+        <div class="name-underline"></div>
+      </div>
+      <h2>Westside Academy | Chicago, IL</h2>
+      <div class="hero-stats-strip">
+        <div class="strip-stat">
+          <span class="strip-number">5'9"</span>
+          <span class="strip-label">Height</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-stat">
+          <span class="strip-number">155</span>
+          <span class="strip-label">lbs</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-stat">
+          <span class="strip-number">24.5</span>
+          <span class="strip-label">PPG</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-stat">
+          <span class="strip-number">8.2</span>
+          <span class="strip-label">APG</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="strip-stat">
+          <span class="strip-number">3.9</span>
+          <span class="strip-label">GPA</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Recruit Me</a>
+        <a href="images/recruit-profile.pdf"
+           class="btn-secondary" download>
+          Download Profile
+        </a>
+        <a href="#" class="btn-qr" id="qr-btn">
+          View QR Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR MODAL -->
+  <div id="qr-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close"
+              onclick="closeQR()">✕</button>
+      <h3>Share Jordan's Page</h3>
+      <div class="qr-container">
+        <img src="images/qr-code.png"
+             alt="QR Code"
+             onerror="this.parentElement
+             .classList.add('qr-placeholder')" />
+      </div>
+      <p>Scan to visit this page</p>
+      <p class="qr-url">
+        jordan.eliterecruitpages.com
+      </p>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <section id="stats">
+    <h2 class="section-title">Player Stats</h2>
+    <div class="stats-dashboard">
+
+      <div class="stats-left">
+        <div class="big-stat-card">
+          <div class="big-stat-number"
+               data-target="245">0</div>
+          <div class="big-stat-label">
+            Points Per Game
+          </div>
+          <div class="big-stat-sub">
+            Season Average
+          </div>
+        </div>
+        <div class="big-stat-card">
+          <div class="big-stat-number"
+               data-target="82">0</div>
+          <div class="big-stat-label">
+            Assists Per Game
+          </div>
+          <div class="big-stat-sub">
+            Season Average
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-right">
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              3-Point Shooting
+            </span>
+            <span class="progress-value">42%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="42"></div>
+          </div>
+        </div>
+
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              Free Throw %
+            </span>
+            <span class="progress-value">89%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="89"></div>
+          </div>
+        </div>
+
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              Field Goal %
+            </span>
+            <span class="progress-value">51%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="51"></div>
+          </div>
+        </div>
+
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              Rebounds Per Game
+            </span>
+            <span class="progress-value">5.4</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="54"></div>
+          </div>
+        </div>
+
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              Steals Per Game
+            </span>
+            <span class="progress-value">2.8</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="28"></div>
+          </div>
+        </div>
+
+        <div class="progress-stat">
+          <div class="progress-header">
+            <span class="progress-label">
+              Academic GPA
+            </span>
+            <span class="progress-value">3.9</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"
+                 data-width="97"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEOS SECTION -->
+  <section id="videos">
+    <h2 class="section-title">Highlight Reels</h2>
+    <div class="videos-grid">
+      <div class="video-item featured">
+        <h3>2024 Season Highlights</h3>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="2024 Season Highlights"
+            allowfullscreen
+            allow="accelerometer; autoplay;
+                   clipboard-write; encrypted-media;
+                   gyroscope; picture-in-picture">
+          </iframe>
+        </div>
+      </div>
+      <div class="videos-side">
+        <div class="video-item">
+          <h3>Junior Year Reel</h3>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Junior Year Reel"
+              allowfullscreen
+              allow="accelerometer; autoplay;
+                     clipboard-write; encrypted-media;
+                     gyroscope; picture-in-picture">
+            </iframe>
+          </div>
+        </div>
+        <div class="video-item">
+          <h3>Skills Showcase</h3>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Skills Showcase"
+              allowfullscreen
+              allow="accelerometer; autoplay;
+                     clipboard-write; encrypted-media;
+                     gyroscope; picture-in-picture">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"
+           onclick="openLightbox(0)">
+        <img src="images/photo1.jpg" alt="Photo 1"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Game Day</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(1)">
+        <img src="images/photo2.jpg" alt="Photo 2"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Practice</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(2)">
+        <img src="images/photo3.jpg" alt="Photo 3"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Tournament</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(3)">
+        <img src="images/photo4.jpg" alt="Photo 4"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Awards</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(4)">
+        <img src="images/photo5.jpg" alt="Photo 5"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Training</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(5)">
+        <img src="images/photo6.jpg" alt="Photo 6"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Team</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(6)">
+        <img src="images/photo7.jpg" alt="Photo 7"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Community</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(7)">
+        <img src="images/photo8.jpg" alt="Photo 8"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Victory</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(8)">
+        <img src="images/photo9.jpg" alt="Photo 9"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Media Day</p>
+        </div>
+      </div>
+      <div class="gallery-item"
+           onclick="openLightbox(9)">
+        <img src="images/photo10.jpg" alt="Photo 10"
+        onerror="this.src='';
+        this.parentElement.classList
+        .add('placeholder')" />
+        <div class="gallery-overlay">
+          <p>Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close"
+            onclick="closeLightbox()">✕</button>
+    <button class="lightbox-prev"
+            onclick="changeLightbox(-1)">❮</button>
+    <button class="lightbox-next"
+            onclick="changeLightbox(1)">❯</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Photo" />
+    </div>
+  </div>
+
+  <!-- RECRUITMENT TIMELINE -->
+  <section id="timeline">
+    <h2 class="section-title">
+      Recruitment Journey
+    </h2>
+    <div class="timeline">
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="timeline-date">
+            Sept 2023
+          </div>
+          <h3>First Varsity Start</h3>
+          <p>Scored 28 points in varsity debut
+          against crosstown rival.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="timeline-date">
+            Dec 2023
+          </div>
+          <h3>All-Conference Selection</h3>
+          <p>Named to All-Conference First Team
+          after averaging 22 PPG in first
+          semester.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="timeline-date">
+            Mar 2024
+          </div>
+          <h3>State Tournament</h3>
+          <p>Led team to state quarterfinals.
+          Averaged 26 PPG throughout the
+          tournament run.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <div class="timeline-date">
+            June 2024
+          </div>
+          <h3>AAU Season</h3>
+          <p>Competed with Elite 17U team.
+          Earned MVP honors at Chicago
+          Showcase tournament.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <div class="timeline-date">
+            Sept 2024
+          </div>
+          <h3>Senior Season Begins</h3>
+          <p>Named team captain. Received
+          first Division I interest letters
+          from programs.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right active">
+        <div class="timeline-content">
+          <div class="timeline-date">Now</div>
+          <h3>🎯 Actively Recruiting</h3>
+          <p>Open to all Division I and II
+          offers. Academic scholarships
+          also being considered.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2 class="section-title">What Coaches Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">Jordan has the highest
+        basketball IQ of any player I have
+        coached in 20 years. His court vision
+        and leadership are truly special.</p>
+        <div class="coach-info">
+          <h4>Coach Marcus Webb</h4>
+          <p>Head Coach — Westside Academy</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">At every showcase I
+        attended Jordan was the best player
+        on the floor. His ability to make
+        everyone around him better is rare.</p>
+        <div class="coach-info">
+          <h4>Coach Darnell Price</h4>
+          <p>AAU Director — Illinois Elite 17U</p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="quote-mark">"</div>
+        <p class="quote">Jordan is as impressive
+        in the classroom as he is on the court.
+        Any program would be lucky to have him
+        represent their university.</p>
+        <div class="coach-info">
+          <h4>Dr. Patricia Moore</h4>
+          <p>Academic Advisor —
+          Westside Academy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE STREAM SECTION -->
+  <section id="live">
+    <h2 class="section-title">Watch Live</h2>
+    <p class="live-subtitle">
+      Catch Jordan live on YouTube
+    </p>
+    <div class="live-container">
+      <div class="live-badge">
+        <span class="live-dot"></span>
+        LIVE WHEN ACTIVE
+      </div>
+      <div class="video-wrapper live-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Live Stream"
+          allowfullscreen
+          allow="accelerometer; autoplay;
+                 clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS SECTION -->
+  <section id="press">
+    <h2 class="section-title">
+      Press & Media
+    </h2>
+    <div class="press-grid">
+      <div class="press-card">
+        <div class="press-outlet">
+          Chicago Tribune
+        </div>
+        <p class="press-quote">
+          "Ellis is the most complete
+          guard prospect in Illinois
+          this season."
+        </p>
+        <a href="#" class="press-link">
+          Read Article →
+        </a>
+      </div>
+      <div class="press-card">
+        <div class="press-outlet">
+          MaxPreps
+        </div>
+        <p class="press-quote">
+          "Ranked #3 Point Guard in
+          Illinois Class of 2026."
+        </p>
+        <a href="#" class="press-link">
+          View Ranking →
+        </a>
+      </div>
+      <div class="press-card">
+        <div class="press-outlet">
+          247Sports
+        </div>
+        <p class="press-quote">
+          "Four-star prospect drawing
+          interest from multiple
+          Big Ten programs."
+        </p>
+        <a href="#" class="press-link">
+          Read Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL SECTION -->
+  <section id="social">
+    <h2 class="section-title">
+      Follow The Journey
+    </h2>
+    <div class="social-links">
+      <a href="#" class="social-btn">Instagram</a>
+      <a href="#" class="social-btn">Twitter / X</a>
+      <a href="#" class="social-btn">Hudl</a>
+      <a href="#" class="social-btn">YouTube</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2 class="section-title">
+      Contact & Recruiting
+    </h2>
+    <p class="contact-subtitle">
+      Interested in recruiting Jordan Ellis?
+    </p>
+    <div class="contact-buttons">
+      <a href="mailto:coach@example.com"
+         class="btn-primary">
+        Send Recruiting Email
+      </a>
+      <a href="images/recruit-profile.pdf"
+         class="btn-secondary" download>
+        Download Recruit Profile
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
