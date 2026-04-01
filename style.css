@@ -176,15 +176,22 @@ body {
 .name-reveal {
   margin-bottom: 20px;
 }
-
-#athlete-name {
-  font-family: 'Road Rage', Arial, sans-serif;
-  font-size: 130px;
-  font-weight: normal;
-  line-height: 1;
-  padding-left: 20px;
-  padding-top: 10px;
+.name-first {
+  color: #ffffff;
+  display: inline-block;
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: slideInLeft 0.8s ease 0.8s forwards;
 }
+
+.name-last {
+  color: #FFD700;
+  display: inline-block;
+  transform: translateX(100px);
+  opacity: 0;
+  animation: slideInRight 0.8s ease 1.0s forwards;
+}
+
 
 .name-first {
   color: #ffffff;
@@ -1341,7 +1348,6 @@ body {
   }
 
 }
-
 /* ================================
    MOBILE PHONES (max 480px)
 ================================ */
@@ -1355,6 +1361,18 @@ body {
 
   #athlete-name {
     font-size: 52px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .name-underline {
+    width: 90%;
   }
 
   .hero-buttons {
